@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('.alert-main').css("width", "0%");
 	$('.alert-main h1').hide();
 	$('#gh-list-item').hide();
-	$('#contact-list-item').hide();
+	$('.list-item').hide();
 
 //on load animations
 	$('.alert-main').animate({
@@ -10,7 +10,7 @@ $(document).ready(function(){
 	}, 500, function(){
 		$('.alert-main h1').fadeIn();
 		$('#gh-list-item').fadeIn(function(){
-			$('#contact-list-item').fadeIn(function(){
+			$('.list-item').fadeIn(function(){
 				$('.side-links').animate({
 					"margin-right" : "10%"
 				},500);
