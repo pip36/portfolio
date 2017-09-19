@@ -20,11 +20,10 @@ $(document).ready(function(){
 
 //alert right animation
 	$('.alert-right').css("width", "0%");
-	$('.alert-right h2').hide();
-	var animated = false;
+	$('.alert-right h2').hide();	
 	var pos = $('.alert-right').position();	
 	$(window).scroll(function(){
-		if (pos.top < $(window).height() + $(window).scrollTop() && animated == false){
+		if (pos.top < $(window).height() + $(window).scrollTop()){
 			animated = true;
 		    $('.alert-right').animate({
 				"width" : "50%"
@@ -33,6 +32,26 @@ $(document).ready(function(){
 		
 			});
 	    }
+	});
+
+	$('.alert-left').each(function(){
+		var self = this;
+		$(this).css("width", "0%");
+		$(this).children().hide();
+		var pos = $(this).position();
+		$(window).scroll(function(){
+		if (pos.top < $(window).height() + $(window).scrollTop()){
+			
+			animated = true;
+		    $(self).animate({
+				"width" : "30%"
+			}, 500, function(){
+				$(this).children().fadeIn();
+		
+			});
+	    }
+	});
+
 	});
 		
 	
