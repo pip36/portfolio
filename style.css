@@ -185,12 +185,16 @@ article{
 .project-image{
 	  width: 50%;
   }
+ .smaller{
+  	width: 30%;
+  }
 
 @media only screen and (max-width: 800px) {
 
   .project-image{
 	  width: 100%;
   }
+
 }
 
 
