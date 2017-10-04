@@ -17,6 +17,10 @@ a{
    text-decoration: none;
    font-size: 25px;
 }
+.inline-link{
+	text-decoration: underline;
+	color: darkblue;
+}
 
 p{
 	font-family: 'Roboto', sans-serif;
