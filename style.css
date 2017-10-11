@@ -126,7 +126,7 @@ header{
 
 @media all and (max-width: 600px) {
 	.alert-main h1{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	#sub-head{
 		font-size: 20px;
@@ -201,7 +201,7 @@ header{
 .alert-right{
 	float:right;
 	text-align: left;
-	height: 200px;
+	height: 100px;
 	width: 50%;
 	background: #a12222; 
     background: -webkit-linear-gradient(right, #f56767, #a12222); /* For Safari 5.1 to 6.0 */
@@ -228,7 +228,7 @@ header{
 
 .alert-left{
 	text-align: right;
-	height: 150px;
+	height: 100px;
 	width: 40%;
 	margin-top: 70px;
 	background: #b58500; 
