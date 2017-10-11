@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<title> Phil </title>
-		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link type="text/css" rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css" />
 	</head>
 
 	<body>
@@ -15,110 +17,258 @@
 		</header>
 
 		<main>
-		  <section>
-		  	<div class="alert-main">
-		  	   <h1> Hello I'm Phil. </h1> 
-		  	   <h1 id="sub-head"> Full Stack Web Developer </h1>
-		  	</div>
-		  	<div class="side-links">
-		  		<ul>
-		  			<li id="gh-list-item"> <a target="_blank" href="https://github.com/pip36">My GitHub <img src="images/GitHub-Mark-64px.png"/></a> </li>
-		  			<li class="list-item"> <a target='_blank' href='https://codepen.io/pip36/'> Codepens </a> </li>
-		  			<li class="list-item"> <a href="mailto:phil_23@live.co.uk"> Contact Me </a> </li>
-		  		</ul>
-		  	</div>
-		  </section>
-		  <div class='container'>
-		  <div class="alert-right">
-		    <h2> Projects </h2>
-          </div>
+		    <section>
+		  	    <div class="alert-main">
+		  	        <h1> Hello I'm Phil. </h1> 
+		  	        <h1 id="sub-head"> Full Stack Web Developer </h1>
+		  	    </div>
+		  	    <div class="side-links">
+		  		    <ul>
+		  			    <li id="github-link"> <a target="_blank" href="https://github.com/pip36">My GitHub <img src="images/GitHub-Mark-64px.png"/></a> </li>
+		  			    <li id="codepen-link"> <a target='_blank' href='https://codepen.io/pip36/'> Codepens </a> </li>
+		  			    <li id="contact-link"> <a href="mailto:phil_23@live.co.uk"> Contact Me </a> </li>
+		  			</ul>
+		  		</div>
+		  	</section>
 
-         <div class="spacer"></div>
+		    <div class='container'>
+		        <div class="alert-right" id="projects-alert">
+		        	<h2> Projects </h2>
+          		</div>
+
+         		<div class="spacer"></div>
         
-         <div class="alert-left">
-         	<h2> Ruby on Rails </h2>
-         </div>
+         		<div class="alert-left" id="rails-alert">
+         			<h2> Ruby on Rails </h2>
+         		</div>
          
-		  <article>
-		  	 <a target="_blank" href= "http://www.samitaylor.com"><h3>  Sami's Oboe Store  </h3>
-		  	  <p> A website made with ruby on rails, with custom shop integration. </p>
-		  	 <img src="images/SamWebsite.PNG" class="project-image">
-		  	  </a>
-		  </article>
-		  </div>
-		  <article>
-		  	 <a target="_blank" href= "https://powerful-harbor-87739.herokuapp.com/"><h3>  Catbook  </h3> 
-		  	 <p> A sample social media website made using ruby on rails. </p>
-		  	 <img src="images/CatBook.PNG" class="project-image">
-		  	 </a>
-		  </article>
+         		<section class='rails'>
+         			<div class='container project-list'>
+         				<div class="columns">
+			 			    <div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       			 								<a target="_blank" href= "http://www.samitaylor.com"> Sami's Oboe Store </a>
+     		 								</div> 		 
+   			 							</div>
+    									<div class="content">
+     								   	 	A website made with ruby on rails, with custom shop integration. 		
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/SamWebsite.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			 		        </div>
+			  				<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://powerful-harbor-87739.herokuapp.com/"> CatBook</a>
+     		 								</div> 		 
+   			 							</div>
 
-		
-		  <div class="alert-left">
-         	<h2> Javascript </h2>
-          </div>
+    									<div class="content">
+     								   	 	A sample social media website made using ruby on rails.		
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/CatBook.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			  				</div>
+						</div>
+        		    </div>
+        		</section>
 
-          <article>
-		  	 <a target="_blank" href= "https://quote-machine-18705.firebaseapp.com/"><h3>  Quote Machine  </h3> 
-		  	  <p> A quote machine with fading colors </p>
-		  	 <img src="images/Quote.PNG" class="project-image ">
-		  	 </a>
-		  </article>
+		 	    <div class="alert-left" id="javascript-alert">
+         			<h2> Javascript </h2>
+         	    </div>
 
-		    <article>
-		  	 <a target="_blank" href= "https://pip36.github.io/game_of_life/"><h3>  John Conway's Game of Life  </h3> 
-		  	  <p> This is a javascript canvas implentation of Conway's game of life. </p>
-		  	 <img src="images/GameOfLife.PNG" class="project-image smaller">
-		  	 </a>
-		  </article>
+         	    <section class='javascript'>
+         	    	<div class='container project-list'>
+         				<div class="columns">
+			 			    <div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       			 								<a target="_blank" href= "https://chess-puzzles-52133.firebaseapp.com/"> Chess Puzzles </a>
+     		 								</div> 		 
+   			 							</div>
+    									<div class="content">
+     								   	 	An app with hundreds of chess puzzles to solve. 
+     								   	 	<p> I also built the chess move validation library in the app which can be found here. <br>
+		  									 <a class ='inline-link' href='https://github.com/pip36/j_chess'> https://github.com/pip36/j_chess </a> </p>		
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/ChessPuzzles.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			 		        </div>
+			  				<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://quote-machine-18705.firebaseapp.com/"> Quote Machine </a>
+     		 								</div> 		 
+   			 							</div>
 
-		   <article class="primary-article">
-		  	 <a target="_blank" href= "https://pip36.github.io/3d_carousel/"><h3> 3D Image Carousel </h3> 
-		  	  <p> An image slider in 3 dimensions, made using Jquery. </p>
-		  	 <img src="images/Carousel.PNG" class="project-image">
-		  	 </a>
-		  </article>
+    									<div class="content">
+     								   	 	A quote machine with fading colors.	
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/Quote.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			  				</div>
+			  				</div>
+			  				<div class='columns'>
+			  				<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://pip36.github.io/game_of_life/"> John Conway's Game of Life </a>
+     		 								</div> 		 
+   			 							</div>
 
-		   <article>
-		  	 <a target="_blank" href= "https://chess-puzzles-52133.firebaseapp.com/"><h3> Chess Puzzles </h3> 
-		  	  <p> An app with hundreds of chess puzzles to solve. </p>
-		  	   <img src="images/ChessPuzzles.PNG" class="project-image">
-		  	 </a>
-		  </article>
+    									<div class="content">
+     								   	 	This is a javascript canvas implentation of Conway's game of life.	
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/GameOfLife.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			  				</div>
+						
+						
+							<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://pip36.github.io/3d_carousel/"> 3D Image Carousel </a>
+     		 								</div> 		 
+   			 							</div>
+    									<div class="content">
+     								   	 	An image slider in 3 dimensions, made using Jquery.
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/Carousel.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			  				</div>
+			  				</div>
+							<div class='columns'>
+							<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://floating-everglades-97160.herokuapp.com/"> Where's Wally </a>
+     		 								</div> 		 
+   			 							</div>
 
-		   <div style="text-align: center;">
-		  	 <p> I also built the chess move validation library in the app which can be found here. <br>
-		  	 <a class ='inline-link' href='https://github.com/pip36/j_chess'> https://github.com/pip36/j_chess </a> </p>
-		  </div>
+    									<div class="content">
+     								   	 	A browser version of the game created in javascript with a rails backend.
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/WheresWally.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			  				</div>
+							
 
+							<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://pip36.github.io/snake/"> Snake </a>
+     		 								</div> 		 
+   			 							</div>
 
-		  <article class="primary-article">
-		  	 <a target="_blank" href= "https://floating-everglades-97160.herokuapp.com/"><h3>  Where's Wally  </h3> 
-		  	  <p> A browser version of the game created in javascript with a rails backend. </p>
-		  	 <img src="images/WheresWally.PNG" class="project-image">
-		  	 </a>
-		  </article>
+    									<div class="content">
+     								   	 	A simple snake clone with some adjustable game rules.
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/Snake.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>	  			
+							</div>
+        		    	</div>
+    		    	</div>
+     	    	</section>
 
-		  <article>
-		  	 <a target="_blank" href= "https://pip36.github.io/snake/"><h3>  Snake  </h3> 
-		  	  <p> A simple snake clone with some adjustable game rules. </p>
-		  	 <img src="images/Snake.PNG" class="project-image">
-		  	 </a>
-		  </article>
+	
+	 		    <div class="alert-left" id="android-alert">
+     		        <h2> Android </h2>
+     		    </div>
 
-		
-		  <div class="alert-left">
-         	 <h2> Android </h2>
-          </div>
-
-		   <article>
-		  	 <a target="_blank" href= "https://play.google.com/store/apps/details?id=com.OB.ShapeBurst"><h3>  Shape Burst  </h3> 
-		  	  <p> A simple android app available on google play </p>
-		  	 <img src="images/Shape.PNG" class="project-image">
-		  	 </a>
-		  </article>
-
-		  
+     		    <section class='android'>
+         		    <div class='container project-list'>
+         		    	<div class="columns">
+							<div class="column">
+			    				<div class="card">
+			    					<div class="card-content">
+    									<div class="media">						
+      										<div class="media-content">
+       										    <a target="_blank" href= "https://play.google.com/store/apps/details?id=com.OB.ShapeBurst"> Shape Burst </a>
+     		 								</div> 		 
+   			 							</div>
+    									<div class="content">
+     								   	 	A simple android app available on google play
+     		 								<br>
+    									</div>
+  									</div>
+  									<div class="card-image">
+   					 					<figure class="image is-16by9">
+     									    <img src="images/Shape.PNG" alt="Placeholder image">
+    									</figure>
+  									</div>		
+								</div>
+			  				</div>
+			  				<div class='column'>
+			  				</div>
+			  			</div>
+		  			</div>
+     		    </section>
+            </div>		  
 		</main>
 	</body>
 </html>
