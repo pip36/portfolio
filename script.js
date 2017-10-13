@@ -1,4 +1,4 @@
-/*
+
 var readyStateCheckInterval = setInterval(function() {
     if (document.readyState === "complete") {
         clearInterval(readyStateCheckInterval);
@@ -14,16 +14,28 @@ function checkVisible(elm) {
 
 
 var initiate = function(){
-	var element5 = document.getElementById('main-content');
+	var element1 = document.getElementById('projects-head');
+	var element2 = document.getElementById('rails-head');
+	var element3 = document.getElementById('js-head');
+	var element4 = document.getElementById('android-head');
 
 	window.addEventListener("scroll", function(){
-		if(checkVisible(element5)){
-			element5.setAttribute("class", "container is-fluid main-container fadecolor");
+		if(checkVisible(element1)){
+			element1.setAttribute("class", "sub-header fadesmooth");
+		};	
+		if(checkVisible(element2)){
+			element2.setAttribute("class", "sub-header fadesmooth");
+		};	
+		if(checkVisible(element3)){
+			element3.setAttribute("class", "sub-header fadesmooth");
+		};	
+		if(checkVisible(element4)){
+			element4.setAttribute("class", "sub-header fadesmooth");
 		};		
 	});
 }
 
-*/
+
 
 	
 

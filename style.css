@@ -88,14 +88,11 @@ header{
 	background-color: #c9c9c9;
 	text-align: center;
 }
-.main-header{
-	font-size: 50px;
+#projects-head{
+	font-size: 40px;
 }
 .sub-header{
 	font-size: 30px;
-	text-align: left;
-	margin-top: 20px;
-	margin-left: 10%;
 }
 
 
@@ -175,6 +172,11 @@ header{
 	animation-duration: 6s;
 }
 
+.fadesmooth{
+	animation-name: fadesmooth;
+	animation-duration: 2s;
+}
+
 @keyframes slidein {
 	from{ width: 0%; }
 	to{ width: 50%; }
@@ -187,14 +189,19 @@ header{
 	100% {opacity: 1;}
 }
 
+@keyframes fadesmooth {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
 @keyframes fadecolor {
-	from{ background-color: black }
-	to{ background-color: #c9c9c9 }
+	from{ color: #c9c9c9 }
+	to{ color: #4a4a4a }
 }
 
 .fadecolor{
 	animation-name: fadecolor;
-	animation-duration: 5s;
+	animation-duration: 1s;
 }
 
 
