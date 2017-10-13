@@ -1,3 +1,4 @@
+/*
 var readyStateCheckInterval = setInterval(function() {
     if (document.readyState === "complete") {
         clearInterval(readyStateCheckInterval);
@@ -22,7 +23,7 @@ var initiate = function(){
 	});
 }
 
-
+*/
 
 	
 
