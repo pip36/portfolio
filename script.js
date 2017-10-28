@@ -1,4 +1,3 @@
-
 var readyStateCheckInterval = setInterval(function() {
     if (document.readyState === "complete") {
         clearInterval(readyStateCheckInterval);
@@ -6,38 +5,48 @@ var readyStateCheckInterval = setInterval(function() {
     }
 }, 10);
 
-function checkVisible(elm) {
-  var rect = elm.getBoundingClientRect();
-  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-}
-
 
 var initiate = function(){
-	var element1 = document.getElementById('projects-head');
-	var element2 = document.getElementById('rails-head');
-	var element3 = document.getElementById('js-head');
-	var element4 = document.getElementById('android-head');
+	var doc = document.documentElement;
+	var head = document.getElementById("nav");
+	var top = 0;
 
+
+	//Fading navbar on scroll
 	window.addEventListener("scroll", function(){
-		if(checkVisible(element1)){
-			element1.setAttribute("class", "sub-header fadesmooth");
-		};	
-		if(checkVisible(element2)){
-			element2.setAttribute("class", "sub-header fadesmooth");
-		};	
-		if(checkVisible(element3)){
-			element3.setAttribute("class", "sub-header fadesmooth");
-		};	
-		if(checkVisible(element4)){
-			element4.setAttribute("class", "sub-header fadesmooth");
-		};		
+		var currentTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+		
+		if(currentTop <= 0){
+			head.setAttribute("class", "navbar");
+		}else{
+			//scrolled down
+			if(currentTop > top){
+				head.setAttribute("class", "navbar headfade headclose");
+			}
+			//scrolled up
+			else if(currentTop < top){
+				head.setAttribute("class", "navbar headfade");
+			}
+		}
+		top = currentTop;
 	});
+
+
+//Open close navbar burger
+    var navbarBurger = document.getElementById('burger');
+  
+	navbarBurger.addEventListener('click', function () {
+	  var target = this.dataset.target;
+	  var $target = document.getElementById(target);
+
+	  // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+	  navbarBurger.classList.toggle('is-active');
+	  $target.classList.toggle('is-active');
+
+	});
+
 }
 
-
-
-	
 
 
 

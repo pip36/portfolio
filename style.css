@@ -1,233 +1,227 @@
-html{
-	padding:0;
-	height:100%;
-
+@keyframes fadein{
+	from { opacity: 0; }
+	to { opacity: 1 }
 }
 
-.project-list{
-	padding: 40px;
+@keyframes headerfade{
+	from { background-color: #abcdf7 }
+	to { background-color: white }
 }
 
-
-body{
-	padding: 0;
-	margin:0;
-	height: 100%;
+.headfade{
+	background-color: #f8f8f8 !important;
+}
+.headclose{
+ opacity: 0 !important;
 }
 
-a{
-   text-decoration: none;
-   font-size: 25px;
+.about-section .container{
+	padding-bottom: 40px;
 }
 
-.inline-link{
-	font-size: 18px;
+.navbar{
+	height: 60px;
+	transition: background-color 1s, opacity 1s;	
+}
+
+.navbar-brand{
+	margin-left: 10%;
+}
+.navbar-end{
+	margin-right: 10%;
+}
+
+#nav{
+	background-color: #abcdf7;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+.navbar-item figure{
+	margin-left: 5px;
 }
 
 main{
-	margin-top: 0;
-	height: 110%;
-	background-color: black;
+	height: 70vh;
+	background-color: #abcdf7;
+}
+.hero-body{
+	background: #abcdf7;
+	background: linear-gradient(#abcdf7, #abcdf7, #abcdf7, #abcdf7, #db99ff); 
+}
+
+main .container{
+	text-align: center;
+	padding-top: 10%;
+}
+
+#main-title{
+	font-size: 70px;
+	color: #234670;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+#main-subtitle{
+	animation-name: fadein;
+	animation-duration: 7s;
+}
+
+.dark-blue{
+	color: #234670;
+}
+
+.circle{
+	width:100px;
+	height:100px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	background-color: #cccccc;
+	background-size: 100% 100%;
+}
+
+.profile-pic{
+	background-image: url("images/profile.JPG");
 	
 }
 
-section{
-	height:100%;
+
+
+
+.about-section{
+	height: 60vh;
+	padding-top: 10vh;
 }
 
-.project-content{
-	margin-top: 25px;
-}
-
-.projects{
-	background-color: black;
-	position:relative;
-	height:auto;
+.about-content{
+	margin-top: 10vh;
 }
 
 
 
-
-/* ----------------HEADER----------------*/
-header{
-	position: fixed;
-	top:0;
-	text-align: right;
-	width: 100%;
-	height:60px;
-	background: rgba(255, 255, 255, 0.8);
-	border-bottom: 1px solid grey;
-	z-index: 1;
+.column.v-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.header-title{
-	position: relative;
-	display:block;
-	float:left;
-	left: 40px;
-	font-size: 20px;
-	color: black;
-	line-height: 60px;
-	vertical-align: center;
+.project-image img{
+	width:100%;
 }
 
-.header-img{
-	position: relative;
-	top:16px;
-	right: 40px;
-	opacity: 0.6;
+.project-info .tags{
+	display: flex;
+	justify-content: center;
 }
-.header-img:hover{
+.project-info{
+	transition: opacity 1s;
+}
+.project-info:hover{
 	opacity: 1;
 }
 
-
-/* ----------------MAIN PAGE----------------*/
-/* ----------------ALERT----------------*/
-#main-content{
-	background-color: #c9c9c9;
-	text-align: center;
+.subtitle.is-light{
+	color: #f8f8f8;
 }
-#projects-head{
-	font-size: 40px;
+.is-light{
+	color: #f8f8f8;
 }
-.sub-header{
-	font-size: 30px;
+.subtitle.is-dark{
+	color: #31619b;
 }
-
-
-.alert-main{
-	position:absolute;
-	top:20%;
-	text-align: right;
-	height: 30%;
-	width: 50%;
-	background: #4178f0; 
-    background: -webkit-linear-gradient(right, #001f4a, #4178f0); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(left, #001f4a, #4178f0); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(left, #001f4a, #4178f0); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to left, #001f4a, #4178f0); /* Standard syntax */
-	padding: 20px;
-	transform: skewY(-10deg);
-	animation-name: slidein;
-	animation-duration: 2s;
-}
-
-.alert-main h1{
-	color: white;
-	margin-right: 20px;
-	font-size: 30px;
-	transform: skewY(10deg);
-	animation-name: fadein;
-	animation-duration: 2s;
-}
-
-#sub-head{
-	font-size: 35px;
-	color: #bdb9b9;
-}
-
-@media all and (max-width: 600px) {
-	.alert-main h1{
-		font-size: 16px;
-	}
-	#sub-head{
-		font-size: 20px;
-	}
-	.down-arrow{
-		visibility: hidden;
-	}
-
-}
-
-/* ----------------LINKS----------------*/
-.side-links{
-	position: absolute;
-	right:10%;
-	bottom: 15%;
-	height:100px;
-	margin-bottom: 15%;
-	margin-right: 1%;
-}
-
-.side-links ul{
-	list-style: none;
-}
-
-.side-links ul li{
-	width:100%;	
-	margin-bottom: 40px;
-}
-
-#github-link{
-	animation-name: fadein;
-	animation-duration: 4s;
-}
-#codepen-link{
-	animation-name: fadein;
-	animation-duration: 5s;
-}
-#contact-link{
-	animation-name: fadein;
-	animation-duration: 6s;
-}
-
-.fadesmooth{
-	animation-name: fadesmooth;
-	animation-duration: 2s;
-}
-
-@keyframes slidein {
-	from{ width: 0%; }
-	to{ width: 50%; }
+.is-dark{
+	color: #31619b;
 }
 
 
-@keyframes fadein {
-	0% {opacity: 0;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+@media only screen and (max-width: 600px) {
+	/* make project titles stretch taller on mobile devices */
+    .project-info{
+    	min-height: 400px;
+    }
+    /* reverse project columns on mobile devices, so title appears above image */
+    .columns.is-reverse-mobile { 
+        flex-direction: column-reverse;
+        display: flex; 
+    }
 }
 
-@keyframes fadesmooth {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-
-@keyframes fadecolor {
-	from{ color: #c9c9c9 }
-	to{ color: #4a4a4a }
-}
-
-.fadecolor{
-	animation-name: fadecolor;
-	animation-duration: 1s;
+/* removes negative margin on columns set by bulma */
+.margin-fix{
+	margin-top: 0.75em;
 }
 
 
-/* ----------------LINKS----------------*/
+#sami-i.column{
+	background-color: #db99ff;
+	background: linear-gradient(#db99ff, #a366ff); 
 
-.slide{
-	animation-name: slidein;
-	animation-duration: 1s;
 }
 
-.spacer{
-	height: 150px;
+#catbook-i{
+	background: #a366ff;
+	background: linear-gradient(#a366ff, #f28c87); 
+}
+.catbook-pic{
+	background-image: url('images/CatBook.PNG');
+	background-size: 100% 100%;
+}
+.catbook-pic img{
+	opacity:0;
 }
 
-.project-image{
-	  width: 50%;
-  }
- .smaller{
-  	width: 30%;
-  }
-
-.container{
-	background-color: #ededed;
+#chess-i{
+	background: #f28c87;
+	background: linear-gradient(#f28c87, #6a8dcc); 
 }
 
-.card-image{
-	padding:10px;
+#crime-i{
+	background-color: #6a8dcc;
+	background: #6a8dcc;
+	background: linear-gradient(#6a8dcc, #abcdf7); 
 }
+
+#shape-i{
+	background: #abcdf7;
+	background: linear-gradient(#abcdf7, #db99ff);
+}
+
+#wally-i{
+	background-color: #db99ff;
+	background: linear-gradient(#db99ff, #a366ff); 
+}
+.wally-pic{
+	background-image: url('images/WheresWally.PNG');
+	background-size: 100% 100%;
+}
+.wally-pic img{
+	opacity:0;
+}
+
+.more-projects{
+	min-height: 100vh;
+	background: #a366ff;
+	background: linear-gradient(#a366ff, #f28c87); 
+}
+
+.container.more-projects-block{
+	padding-top: 10vh;
+}
+
+.container.more-projects-block .columns{
+	padding-top: 10vh;
+}
+
+.mini-project{
+	transition: opacity 0.5s;
+}
+.mini-project:hover{
+	opacity: 0.6;
+}
+
+
+
+ 
+
+
 
