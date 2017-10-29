@@ -1,3 +1,5 @@
+/*** $Animations ***/
+
 @keyframes fadein{
 	from { opacity: 0; }
 	to { opacity: 1 }
@@ -15,36 +17,41 @@
  opacity: 0 !important;
 }
 
-.about-section .container{
-	padding-bottom: 40px;
-}
-
+/***$header***/
 .navbar{
-	height: 60px;
-	transition: background-color 1s, opacity 1s;	
-}
-
-.navbar-brand{
-	margin-left: 10%;
-}
-.navbar-end{
-	margin-right: 10%;
+	padding-right: 10%;	
+	transition: background-color 1s, opacity 1s;
 }
 
 #nav{
-	background-color: #abcdf7;
 	position: fixed;
 	width: 100%;
+	background-color: #abcdf7;
 	z-index: 10;
 }
+
 .navbar-item figure{
 	margin-left: 5px;
 }
 
-main{
+main{ 
 	height: 70vh;
 	background-color: #abcdf7;
 }
+
+.about-section .container{
+	padding-bottom: 40px; /*padding below contact button */
+}
+
+.about-section{
+	height: 60vh;
+	padding-top: 10vh;
+}
+
+.about-content{
+	margin-top: 10vh;
+}
+
 .hero-body{
 	background: #abcdf7;
 	background: linear-gradient(#abcdf7, #abcdf7, #abcdf7, #abcdf7, #db99ff); 
@@ -82,20 +89,9 @@ main .container{
 
 .profile-pic{
 	background-image: url("images/profile.jpg");
-	
 }
 
 
-
-
-.about-section{
-	height: 60vh;
-	padding-top: 10vh;
-}
-
-.about-content{
-	margin-top: 10vh;
-}
 
 
 
