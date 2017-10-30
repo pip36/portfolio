@@ -13,7 +13,7 @@
   background: white;
   border-radius: 100px;
   border-bottom: 3px solid grey;
-  left: -50vw;
+  left: -300px;
 }
 .cloud::before{
   content: '';
