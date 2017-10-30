@@ -142,8 +142,10 @@ main .container{
     }
     /* reverse project columns on mobile devices, so title appears above image */
     .columns.is-reverse-mobile { 
+    	display: flex; 
         flex-direction: column-reverse;
-        display: flex; 
+        display: -webkit-flex; 
+        -webkit-flex-direction: column-reverse;
     }
 }
 
