@@ -142,7 +142,7 @@ main .container{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	/* make project titles stretch taller on mobile devices */
     .project-info{
     	min-height: 400px;
