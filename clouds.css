@@ -1,0 +1,96 @@
+.clouds-container{
+  position: absolute;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+  padding-top: 10%;
+}
+
+.cloud{
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: white;
+  border-radius: 100px;
+  border-bottom: 3px solid grey;
+  left: -50vw;
+}
+.cloud::before{
+  content: '';
+  position: absolute;
+  width:50%;
+  height:150%;
+  left:13%;
+  top: -60%;
+  background:white;
+  background: -webkit-linear-gradient(#e6f0f2, white 30%);
+  background: -o-linear-gradient(#e6f0f2, white 30%); 
+  background: -moz-linear-gradient(#e6f0f2, white 30%); 
+  background: linear-gradient(#e6f0f2, white 30%);
+  border-radius: 50%;  
+}
+.cloud::after{
+  content: '';
+  position: absolute;
+  width:30%;
+  height:80%;
+  right:15%;
+  top: -25%;
+  background:white;
+  background: -webkit-linear-gradient(#e6f0f2, white 20%);
+  background: -o-linear-gradient(#e6f0f2, white 20%); 
+  background: -moz-linear-gradient(#e6f0f2, white 20%); 
+  background: linear-gradient(#e6f0f2, white 20%);
+  border-radius: 50%;
+}
+.cloud .shadow {
+	width: 80%;
+	position: absolute; 
+  bottom: -10%; 
+  left:5%;
+	z-index: -1;
+	box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.4);	
+	border-radius: 50%;
+}
+
+.is-small{
+  width: 75px;
+  height: 25px;
+}
+.is-medium{
+  width: 150px;
+  height: 50px;
+}
+.is-large{
+  width: 240px;
+  height: 80px;
+}
+
+@media screen and (min-width: 770px) {
+  .slow{
+    -o-animation: float 45s infinite linear;
+    -moz-animation: float 45s infinite linear;
+    -webkit-animation: float 45s infinite linear;
+    animation: float 45s infinite linear; 
+  }
+  .medium{
+    -o-animation: float 35s infinite linear;
+    -moz-animation: float 35s infinite linear;
+    -webkit-animation: float 35s infinite linear;
+    animation: float 35s infinite linear; 
+  }
+  .fast{
+    -o-animation: float 25s infinite linear;
+    -moz-animation: float 25s infinite linear;
+    -webkit-animation: float 25s infinite linear;
+    animation: float 25s infinite linear; 
+  }
+  .delay{
+    animation-delay: 7s;
+  }
+}
+
+@keyframes float{
+  0% { left:-250px; }
+  100% { left:100vw; }
+}
