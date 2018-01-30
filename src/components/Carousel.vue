@@ -253,7 +253,7 @@ export default {
         let carouselElement = document.getElementById('carousel')       
         let image = carouselElement.childNodes[i]
         image.style.transform = `translateX(${X}px) translateZ(${Z}px) rotateY(${rot}deg)`
-        image.style.backgroundImage = `url(../../static/${this.projects[i].image})`    
+        image.style.backgroundImage = `url(static/${this.projects[i].image})`    
       }
     }
 
