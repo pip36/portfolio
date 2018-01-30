@@ -19,7 +19,6 @@
         <p> As well as build web applications, I am also a musician! (oboist) I have played with several orchestras in my time and
           am also an active teacher of music. </p>
       </div>
-      <img src="static/ChessPuzzles.PNG">
     </div>
   </div>
 </template>
