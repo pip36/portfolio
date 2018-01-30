@@ -87,7 +87,7 @@ export default {
       currentProjectIndex: 0,
       projects: [
         {
-          image: "./static/ChessPuzzles.PNG", 
+          image: "static/ChessPuzzles.PNG", 
           title: 'Chess Puzzles',
           repoUrl: 'https://github.com/pip36/chess-puzzles',
           url: 'https://chess-puzzles-52133.firebaseapp.com',
@@ -96,7 +96,7 @@ export default {
           technologies: ['html','css','javascript']
         },
         {
-          image: "./static/SamiWebsite.PNG", 
+          image: "static/SamiWebsite.PNG", 
           title: 'Sami\'s oboe website',
           repoUrl: 'https://github.com/pip36/website-sami',
           url: 'http://www.samitaylor.com/',
@@ -106,7 +106,7 @@ export default {
           technologies: ['html','css','jquery','rails']
         },
         {
-          image: "./static/Shape.PNG",
+          image: "static/Shape.PNG",
           title: 'Shape Burst',
           url: 'https://play.google.com/store/apps/details?id=com.OB.ShapeBurst',
           description: `I created this android app before I started learning web development seriously. I decided I wanted to release an app on the app
@@ -114,7 +114,7 @@ export default {
           technologies: ['android', 'c-sharp']
         },
         {
-          image: "./static/Wally.PNG",
+          image: "static/Wally.PNG",
           title: 'Where\'s Wally',
           repoUrl: 'https://github.com/pip36/wheres_wally',
           url: 'https://floating-everglades-97160.herokuapp.com/',
@@ -123,7 +123,7 @@ export default {
           technologies: ['html','css','javascript','rails']
         },
         {
-          image: "./static/Quote.PNG",
+          image: "static/Quote.PNG",
           title: 'Quote Machine',
           repoUrl: 'https://github.com/pip36/quote-machine',
           url: 'https://quote-machine-18705.firebaseapp.com/',
@@ -131,7 +131,7 @@ export default {
           technologies: ['html','css','vue']
         },
         {
-          image: "./static/Snake.PNG",
+          image: "static/Snake.PNG",
           title: 'Snake',
           repoUrl: 'https://github.com/pip36/snake',
           url: 'https://pip36.github.io/snake/',
@@ -139,7 +139,7 @@ export default {
           technologies: ['html','css','javascript']
         },
         {
-          image: "./static/GameOfLife.PNG",
+          image: "static/GameOfLife.PNG",
           title: 'Game of Life',
           repoUrl: 'https://github.com/pip36/game_of_life',
           url: 'https://pip36.github.io/game_of_life/',
@@ -148,7 +148,7 @@ export default {
           technologies: ['html','javascript']
         },
         {
-          image: "./static/CatBook.PNG",
+          image: "static/CatBook.PNG",
           title: 'Catbook',
           repoUrl: 'https://github.com/pip36/cat-book-app',
           url: 'https://powerful-harbor-87739.herokuapp.com/',
@@ -157,7 +157,7 @@ export default {
           technologies: ['html','css','javascript', 'rails']
         },
         {
-          image: "./static/Crime.PNG",
+          image: "static/Crime.PNG",
           title: 'Crime Map',
           url: 'https://crime-uk.firebaseapp.com/',
           description: `A simple little app for displaying crime data in the uk. Pick a location and month and it will show you 
@@ -166,7 +166,7 @@ export default {
            technologies: ['html','javascript']
         },
         {
-          image: "./static/Quiz.PNG",
+          image: "static/Quiz.PNG",
           title: 'Quizzical',
           repoUrl: 'https://github.com/pip36/quiz',
           url: 'https://quizz-e6536.firebaseapp.com/',
@@ -176,7 +176,7 @@ export default {
            technologies: ['html','css','vue']
         },
         {
-          image: "./static/Nexo.PNG",
+          image: "static/Nexo.PNG",
           title: 'Nexocharge Website',
           repoUrl: 'https://github.com/pip36/NexoCharge',
           url: 'https://nexocharge.firebaseapp.com/',
