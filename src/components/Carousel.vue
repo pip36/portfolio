@@ -318,7 +318,9 @@ export default {
     left: 50%;
     bottom: 0;
     transform-style: preserve-3d;
-    transform: translateZ(-50px)
+    transform: translateZ(-50px);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(-50px);
   }
 
   @media screen and ( min-width: 760px ){ 
@@ -368,8 +370,8 @@ export default {
   }
 
   .image{
-    
     transition: transform 1s;
+    -webkit-transition: transform 1s;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; 
