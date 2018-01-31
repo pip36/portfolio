@@ -298,7 +298,7 @@ export default {
   }
 
   h4 {
-    margin-top: 8%;
+    margin-top: 8vh;
   }
 
   .c-container {
@@ -318,6 +318,7 @@ export default {
     left: 50%;
     bottom: 0;
     transform-style: preserve-3d;
+    transform: translateZ(-50px)
   }
 
   @media screen and ( min-width: 760px ){ 
