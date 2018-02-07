@@ -254,6 +254,12 @@ export default {
         let image = carouselElement.childNodes[i]
         image.style.transform = `translateX(${X}px) translateZ(${Z}px) rotateY(${rot}deg)`
         image.style.backgroundImage = `url(static/${this.projects[i].image})` 
+
+        // forces redraw for ios bug
+        image.style.opacity = 0.96
+        setTimeout(() => {
+          image.style.opacity = 0.97
+        }, 250)
       }
     }
 
